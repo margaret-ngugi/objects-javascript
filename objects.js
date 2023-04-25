@@ -34,18 +34,19 @@ const products = [
     { name: 'Shoes', price: 60, category: 'Clothing' },
   ];
   
-//  function productCategory(products){
-//   var groups= {}
-//   products.forEach(function(product)
-//   var category=product.category;
-//   if
-//   (!groups.ownProprty(category))
-//   groups[category]=[];
+ function productCategory(products){
+  var groups= {}
+  products.forEach(function(products)
+  var category=products.category;
+  if
+  (!groups.ownProprty(category))
+  groups[category]=[];}
   
 
-//    groups[category].push(product); })
-//    return group;
-//    console.log(productCategory(product));
+   groups[category].push(products); );
+   return group;
+ 
+   console.log(productCategory(products));
   
  
 
@@ -91,5 +92,9 @@ const car = {
   };
 
   function ageMethod(car){
-    var 
-  }
+    var currentYear = newDate().geTFullYear()
+    var carYear = car.year;
+    var age = currentYear.carYear;
+    car.age = function(){
+      return age; }; }
+      console.log(ageMethod(car));
