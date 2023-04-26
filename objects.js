@@ -35,17 +35,17 @@ const products = [
   ];
   
  function productCategory(products){
-  var groups= {}
-  products.forEach(function(products)
-  var category=products.category;
-  if
-  (!groups.ownProprty(category))
-  groups[category]=[];}
-  
+  const groups= {};
+  products.forEach((product)=>{
+   const category=product.category;
+  if(!groups[category]){
+  groups[category]=[];
+}
+   groups[category].push(product)
+  });
+   return groups;
+}
 
-   groups[category].push(products); );
-   return group;
- 
    console.log(productCategory(products));
   
  
@@ -68,7 +68,10 @@ const students = [
       const average=students.scores.reduce((total,score)=>total+score,0)/students.score;
       return average>=85;}).map(students=>students.name);
   }
+  
   console.log(topStudent(students));
+  
+  
 
   
 
@@ -92,9 +95,11 @@ const car = {
   };
 
   function ageMethod(car){
-    var currentYear = newDate().geTFullYear()
+    var currentYear = new Date().getFullYear()
     var carYear = car.year;
     var age = currentYear.carYear;
     car.age = function(){
-      return age; }; }
-      console.log(ageMethod(car));
+      return age; }; 
+    }
+    console.log(car)
+    ageMethod(car)
